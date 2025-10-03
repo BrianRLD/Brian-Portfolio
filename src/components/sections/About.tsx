@@ -15,12 +15,12 @@ export default function About() {
           {/* Columna de texto */}
           <div className="flex flex-col space-y-6">
             {/* Título con animación de escritura */}
-            <h1 className="text-2xl sm:text-3xl lg:text-4xl font-[family-name:var(--font-press-start)] typing">
+            <h1 className="text-2xl sm:text-3xl lg:text-4xl font-[family-name:var(--font-press-start)] typing text-white">
               Who am I?
             </h1>
 
             {/* Párrafo descriptivo */}
-            <p className="text-sm sm:text-base lg:text-lg fade-in leading-relaxed">
+            <p className="text-sm sm:text-base lg:text-lg fade-in leading-relaxed text-white">
               I&apos;m Brian Amparo, a Web & API Developer with over 6 years of experience in Software development. A
               graduate of ITLA, focus on building scalable APIs, optimizing databases, and delivering backend solutions.
               My expertise includes JavaScript (Node.js, Express), Python, SQL/NoSQL databases, RESTful & GraphQL APIs,

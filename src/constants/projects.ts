@@ -34,6 +34,6 @@ export const projects = [
       { name: "postgresql", color: "text-blue-500" },
     ],
     image: "/projects/easy_clean.png",
-    source_code_link: "https://github.com/bryandejesusrt/CleanEasy-FronEnd",
+    source_code_link: "https://github.com/BrianRLD/CleanNow",
   },
 ];

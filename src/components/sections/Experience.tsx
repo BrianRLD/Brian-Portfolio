@@ -20,7 +20,7 @@ const Experience: React.FC = () => {
         <p className="text-gray-500 text-center text-sm sm:text-base mb-2">
           What I have done so far
         </p>
-        <h2 className="text-3xl sm:text-4xl font-bold text-center mb-10">
+        <h2 className="text-3xl sm:text-4xl font-bold text-center mb-10 text-white">
           Work Experience
         </h2>
       </motion.div>

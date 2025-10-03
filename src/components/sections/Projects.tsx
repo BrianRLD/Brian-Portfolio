@@ -27,7 +27,11 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   source_code_link,
 }) => {
   return (
-    <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
+    <motion.div
+      variants={fadeIn("up", "spring", index * 0.5, 0.75)}
+      className="cursor-pointer"
+      onClick={() => window.open(source_code_link, "_blank")}
+    >
       <Tilt
         tiltMaxAngleX={20}
         tiltMaxAngleY={20}
@@ -39,26 +43,10 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
         <div className="relative w-full h-[230px]">
           <Image
             src={image}
-            alt="project image"
+            alt={name}
             fill
             className="object-cover rounded-2xl"
           />
-
-          {/* Botón GitHub */}
-          <div className="absolute inset-0 flex justify-end m-3">
-            <div
-              onClick={() => window.open(source_code_link, "_blank")}
-              className="bg-black/70 w-10 h-10 rounded-full flex justify-center items-center cursor-pointer hover:scale-110 transition"
-            >
-              <Image
-                src="/github.png"
-                alt="source code"
-                width={20}
-                height={20}
-                className="object-contain"
-              />
-            </div>
-          </div>
         </div>
 
         {/* Nombre y descripción */}
