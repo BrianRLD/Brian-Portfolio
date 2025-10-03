@@ -12,7 +12,7 @@ export const experiences = [
     ],
   },
   {
-    title: " Software Engineering Intern",
+    title: " Software Engineer Intern",
     company_name: "Popular Bank",
     icon: "/popular1.png",
     iconBg: "#E6DEDD",
