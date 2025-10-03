@@ -1,26 +1,137 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+/* Fuente global */
+html,body {
+  font-family: var(--font-press-start), cursive;
+  line-height: 1.5;
+  background: linear-gradient(135deg, #434343, #000000);
+  background-color: #434343;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+.bg-layout {
+  background: linear-gradient(135deg, #434343, #000000);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+
+.text-colored {
+  color: #04888f
+}
+
+/* Animación de escritura para el título */
+.typing {
+  overflow: hidden;
+  border-right: 0.1em solid #00ff99;
+  white-space: nowrap;
+  width: 0;
+  animation: typing 2s steps(30, end) forwards, blink 0.7s infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
 }
+
+/* Animación fade-in para el párrafo */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeIn 2s ease-out forwards;
+  animation-delay: 2.2s;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Animación para la imagen de perfil */
+.profile-fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeIn 2s ease-out forwards;
+  animation-delay: 2.7s;
+}
+
+/* Animaciones escalonadas para los logos */
+.logo-fade-in-1 {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeIn 2s ease-out forwards;
+  animation-delay: 3.2s;
+}
+
+.logo-fade-in-2 {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeIn 2s ease-out forwards;
+  animation-delay: 3.5s;
+}
+
+.logo-fade-in-3 {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeIn 2s ease-out forwards;
+  animation-delay: 3.8s;
+}
+
+.logo-fade-in-4 {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeIn 2s ease-out forwards;
+  animation-delay: 4.1s;
+}
+
+.logo-fade-in-5 {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeIn 2s ease-out forwards;
+  animation-delay: 4.4s;
+}
+
+.logo-fade-in-6 {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeIn 2s ease-out forwards;
+  animation-delay: 4.7s;
+}
+
+/* Efecto hover para los logos */
+.logo-hover {
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  cursor: pointer;
+}
+
+.logo-hover:hover {
+  transform: scale(1.15) translateY(-8px) rotate(5deg);
+  filter: drop-shadow(0 10px 20px rgba(4, 136, 143, 0.4)) brightness(1.2);
+}
+
+/* Media queries para responsive */
+@media (max-width: 640px) {
+  .typing {
+    font-size: 1.5rem;
+  }
+
+  .fade-in {
+    font-size: 0.875rem;
+  }
+}
+
+@media (min-width: 641px) and (max-width: 1024px) {
+  .typing {
+    font-size: 2rem;
+  }
+}
+
