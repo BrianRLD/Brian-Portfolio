@@ -36,4 +36,32 @@ export const projects = [
     image: "/projects/easy_clean.png",
     source_code_link: "https://github.com/BrianRLD/CleanNow",
   },
+
+   {
+    name: "Shrimp Restaurant DEMO",
+    description:
+      "Clean UI/UX design for our customers",
+    tags: [
+      { name: "Figma", color: "text-green-500" },
+      { name: "Nextjs", color: "text-pink-400" },
+      { name: "React", color: "text-blue-100" },
+    ],
+    image: "/projects/shrimp.jpg",
+    source_code_link: "https://v0-shrimp-restaurant-design.vercel.app/",
+  },
+
+   {
+    name: "Amparo Oil DEMO",
+    description:
+      "Facturation App created for an oil business",
+    tags: [
+      { name: "Nodejs", color: "text-orange-500" },
+      { name: "Typescript", color: "text-blue-400" },
+      { name: "T-SQL", color: "text-gray-500" },
+    ],
+    image: "/projects/gasoil.jpg",
+    source_code_link: "https://v0-amparo-combustibles-site.vercel.app/",
+  },
+
+  
 ];
